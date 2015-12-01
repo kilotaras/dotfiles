@@ -1,1 +1,2 @@
-easy_install SpoofMAC
+pip install -U pip
+pip install -U mercurial virtualenv virtualenvwrapper
