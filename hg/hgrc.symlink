@@ -1,0 +1,17 @@
+[ui]
+
+[pager]
+pager = LESS='FSRX' less
+attend = annotate, cat, diff, status, export, glog, log, qdiff
+
+[extensions]
+graphlog=
+mq=
+rebase=
+color=
+convert=
+pager=
+purge=
+record=
+transplant=
+shelve=
