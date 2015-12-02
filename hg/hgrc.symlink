@@ -15,3 +15,5 @@ purge=
 record=
 transplant=
 shelve=
+patience=~/.hgext/hg-patience/patience.py
+prompt=~/.hgext/hg-prompt/prompt.py
