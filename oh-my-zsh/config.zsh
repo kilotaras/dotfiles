@@ -1,13 +1,5 @@
-
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
-
-ZSH_THEME="amuse"
-
-plugins=(git autojump virtualenvwrapper pip zsh-syntax-highlighting)
-
-source $ZSH/oh-my-zsh.sh
-
+antigen use oh-my-zsh
+antigen theme amuse
 
 local ret_status="%(?:%{$fg[green]%}:%{$fg[red]%}%s)"
 
@@ -23,5 +15,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 
 hg_prompt_info() {
-     hg prompt --angle-brackets "%{$fg_bold[cyan]%} hg:%{$fg_bold[red]%}<branch>" 2>/dev/null
+    STATUS="%{$fg[yellow]%}<status>"
+    BRANCH="%{$fg_bold[red]%}<branch>"
+    hg prompt --angle-brackets "%{$fg_bold[cyan]%} hg: ${BRANCH}${STATUS}" 2>/dev/null
   }
