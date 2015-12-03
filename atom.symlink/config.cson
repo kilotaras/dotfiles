@@ -3,7 +3,7 @@
     showIndentGuide: true
     fontFamily: "Menlo"
     invisibles: {}
-    fontSize: 15
+    fontSize: 16
     softWrapAtPreferredLineLength: true
   core:
     ignoredNames: [

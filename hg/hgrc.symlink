@@ -1,8 +1,9 @@
 [ui]
+username = Taras Boiko <taras.boiko@qbeats.com>
 
 [pager]
 pager = LESS='FSRX' less
-attend = annotate, cat, diff, status, export, glog, log, qdiff
+attend = annotate, cat, diff, status, export, glog, log, qdiff, lga
 
 [extensions]
 graphlog=
@@ -17,3 +18,11 @@ transplant=
 shelve=
 patience=~/.hgext/hg-patience/patience.py
 prompt=~/.hgext/hg-prompt/prompt.py
+
+
+[alias]
+lga = glog --style=/home/tboiko/.hgext/map-cmdline.lg
+lg = log --graph --pretty=format:'%Cred%h%Creset %Creset%Cblue%an%Creset  %s %Cgreen(%cr)%Cred%d%Creset' --abbrev-commit --date=relative
+pb = push -branch .
+
+nuke = !hg up -C . && hg clean
