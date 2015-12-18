@@ -3,7 +3,7 @@
     showIndentGuide: true
     fontFamily: "Menlo"
     invisibles: {}
-    fontSize: 16
+    fontSize: 17
     softWrapAtPreferredLineLength: true
     tabLength: 4
   core:
@@ -24,6 +24,7 @@
       "background-tips"
       "exception-reporting"
       "metrics"
+      "dev-live-reload"
     ]
   "spell-check":
     grammars: [
@@ -35,3 +36,6 @@
     showOnStartup: false
   "release-notes":
     viewedVersion: "0.89.0"
+  "linter-checkbashisms": {}
+  "atom-beautify":
+    _analyticsUserId: "27707958-3cd4-4a54-bb95-fdb14f382db2"
