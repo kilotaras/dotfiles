@@ -1,5 +1,6 @@
 [ui]
 username = Taras Boiko <taras.boiko@qbeats.com>
+editor = vim
 
 [pager]
 pager = LESS='FSRX' less
@@ -22,6 +23,7 @@ prompt=~/.hgext/hg-prompt/prompt.py
 
 [alias]
 lga = glog --style=/home/tboiko/.hgext/map-cmdline.lg
-pb = push -branch .
-
-nuke = !hg up -C . && hg clean
+pb = push -b .
+pulu = pull -u
+upc = hg up -C
+nuke = !hg up -C . && hg purge

@@ -10,3 +10,4 @@ git/gitconfig.symlink
 nohup.out
 .hg
 git
+blob-store

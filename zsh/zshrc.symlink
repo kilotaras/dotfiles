@@ -1,6 +1,8 @@
 # shortcut to this dotfiles path is $ZSH
 export DOTFILES=$HOME/.dotfiles
 
+source $DOTFILES/antigen/antigen.zsh
+
 # all of our zsh files
 typeset -U config_files
 config_files=($DOTFILES/**/*.zsh)
@@ -31,3 +33,7 @@ do
 done
 
 unset config_files
+
+antigen apply
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
