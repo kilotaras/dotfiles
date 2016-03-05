@@ -1,6 +1,5 @@
 antigen bundles <<EOBUNDLES
   mercurial
-  ssh-agent
   cp
   pip
   python
