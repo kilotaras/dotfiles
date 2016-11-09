@@ -35,3 +35,5 @@ done
 unset config_files
 
 antigen apply
+
+source ~/.zshlocal  # move auto installed crap here
