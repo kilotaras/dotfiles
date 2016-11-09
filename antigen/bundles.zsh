@@ -13,6 +13,5 @@ antigen bundles <<EOBUNDLES
 
   unixorn/autoupdate-antigen.zshplugin
   lesaint/lesaint-mvn
-  sharat87/pip-app
   RobSis/zsh-completion-generator
 EOBUNDLES
