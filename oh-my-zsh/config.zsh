@@ -1,6 +1,9 @@
 antigen use oh-my-zsh
 antigen theme robbyrussell
 
+# force apply here so we can override with scripts after that
+antigen apply
+
 local ret_status="%(?:%{$fg[green]%}:%{$fg[red]%}%s)"
 
 PROMPT='
