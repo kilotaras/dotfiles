@@ -23,7 +23,4 @@ hg_prompt_info() {
     hg prompt --angle-brackets "%{$fg_bold[cyan]%} hg: ${BRANCH}${STATUS}" 2>/dev/null
   }
 
-current_time() {
-    date +%H:%M:%S
-}
-RPROMPT="%{$fg_bold[green]%}$(current_time)%{$reset_color%}"
+RPROMPT="%{$fg_bold[green]%}%*%{$reset_color%}"
